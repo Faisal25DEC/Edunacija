@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Poppins:wght@300;400;500;600;700;800;900&family=Press+Start+2P&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+.merriweather {
+  font-family: "Merriweather";
+}
+.features > article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 768px) {
+  .features > article:nth-child(even) {
+    flex-direction: column;
+  }
+}
+.price-bottom {
+  margin-top: auto;
+}
+.contact-wrapper {
+  background-color: rgba(249, 227, 221, 0.1);
+}
+.contact-details {
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sidebar {
+  display: flex;
+  left: -999px;
+  transition: all 0.6s ease;
+}
+.show-flex {
+  display: flex;
+  left: 0px;
+  transition: all 0.4s;
+}
+.hamburger {
+  overflow: hidden;
+}
+.hamburger > i {
+  display: block;
+
+  font-size: 24px;
+}

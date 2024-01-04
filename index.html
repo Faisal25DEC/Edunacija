@@ -96,7 +96,26 @@
         >
           SIGN UP
         </button>
-        <button class="nav-login-button-mid block md:hidden"></button>
+        <div class="dropdown-container-mobile block md:hidden relative">
+          <button class="nav-login-button-mid block md:hidden"></button>
+          <span class="dropdown-triangle-mobile">▲</span>
+          <div
+            class="dropdown-content-mobile overflow-hidden absolute flex flex-col justify-center w-[max-content] bg-white rounded-[20px] top-[50px] right-[-130px]"
+          >
+            <a href="#" class="flex gap-2 items-center py-4 px-8"
+              ><img src="./src/assets/parents.png" class="w-6 h-6" alt="" /> For
+              Parents</a
+            >
+            <a href="#" class="flex gap-2 items-center py-4 px-8"
+              ><img src="./src/assets/students.png" class="w-6 h-6" alt="" />For
+              Students</a
+            >
+            <a href="#" class="flex gap-2 items-center py-4 px-8"
+              ><img src="./src/assets/teachers.png" class="w-6 h-6" alt="" />For
+              Teachers</a
+            >
+          </div>
+        </div>
       </div>
       <div class="gap-[40px] hidden md:flex">
         <button class="border-none bg-white font-semibold text-[16px]">

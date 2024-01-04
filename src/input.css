@@ -76,3 +76,29 @@
 .dropdown-container:hover .dropdown-content {
   display: flex;
 }
+
+.dropdown-triangle-mobile {
+  display: none;
+  position: absolute;
+  left: 50%;
+  margin-left: 36px;
+  top: 32px;
+  color: white;
+  text-shadow: 0 0 20px black;
+}
+
+.dropdown-content-mobile {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: none;
+  transition: all 0.4 ease;
+}
+.dropdown-container-mobile:hover .dropdown-triangle-mobile {
+  display: block;
+}
+.dropdown-content-mobile > a:hover {
+  background-color: rgba(184, 103, 4, 0.123);
+}
+
+.dropdown-container-mobile:hover .dropdown-content-mobile {
+  display: flex;
+}

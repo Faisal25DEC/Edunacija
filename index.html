@@ -12,6 +12,7 @@
       referrerpolicy="no-referrer"
     />
     <link href="/dist/output.css" rel="stylesheet" />
+    <title>Edunacija</title>
   </head>
   <body>
     <nav
@@ -101,10 +102,30 @@
         <button class="border-none bg-white font-semibold text-[16px]">
           SIGN UP
         </button>
-        <button class="nav-login-button"></button>
+        <div class="dropdown-container relative">
+          <button class="nav-login-button"></button>
+          <span class="dropdown-triangle">▲</span>
+          <div
+            class="dropdown-content overflow-hidden absolute flex flex-col justify-center w-[max-content] bg-white rounded-[20px] right-[-30px]"
+          >
+            <a href="#" class="flex gap-2 items-center py-4 px-8"
+              ><img src="./src/assets/parents.png" class="w-6 h-6" alt="" /> For
+              Parents</a
+            >
+            <a href="#" class="flex gap-2 items-center py-4 px-8"
+              ><img src="./src/assets/students.png" class="w-6 h-6" alt="" />For
+              Students</a
+            >
+            <a href="#" class="flex gap-2 items-center py-4 px-8"
+              ><img src="./src/assets/teachers.png" class="w-6 h-6" alt="" />For
+              Teachers</a
+            >
+          </div>
+        </div>
       </div>
       <button class="block md:hidden hamburger w-8 h-8"></button>
     </nav>
+
     <section
       class="w-[95%] flex flex-col md:flex-row gap-[48px] md:max-w-[1280px] m-auto pt-[30px] md:pt-[67px]"
     >
@@ -177,7 +198,7 @@
         Pricing Plan
       </h1>
       <div
-        class="flex flex-col md:flex-row gap-[36px] md:justify-between pricing pt-[63px]"
+        class="flex flex-wrap flex-col md:flex-row gap-[36px] md:justify-between pricing pt-[63px]"
       ></div>
     </section>
     <section class="w-full py-[63px]">

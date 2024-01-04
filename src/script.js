@@ -24,7 +24,7 @@ const sidebar = document.querySelector(".sidebar");
 
 // heroImage.innerHTML = HeroImage();
 heroButton.innerHTML = HeroButto();
-navLoginButton.innerHTML = NavLoginButton();
+navLoginButton.innerHTML += NavLoginButton();
 navLoginButtonMid.innerHTML = NavLoginButtonMid();
 
 const features = [
@@ -153,7 +153,7 @@ const pricing = [
 
 pricing.forEach((item) => {
   pricingSection.innerHTML += ` <article
-  class= "p-[20px] md:p-[40px] pb-[24px] rounded-[30px] border-[1px] flex flex-col"
+  class= "max-w-[500px] p-[20px] md:p-[40px] pb-[24px] rounded-[30px] border-[1px] flex flex-col"
     style = "border-color:${item.color}">
 
    <div class = "flex items-center justify-center">
